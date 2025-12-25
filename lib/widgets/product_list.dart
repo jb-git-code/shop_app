@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:shop_app/global_varriables.dart';
-import 'package:shop_app/product_cart.dart';
-import 'package:shop_app/product_detail_page.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+import 'package:shop_app/global_varriables.dart';
+import 'package:shop_app/widgets/product_cart.dart';
+import 'package:shop_app/pages/product_detail_page.dart';
+
+class ProductList extends StatefulWidget {
+  const ProductList({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ProductList> createState() => _ProductListState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ProductListState extends State<ProductList> {
   final List<String> filters = const ["All", "Adidas", "Nike", "Bata"];
 
   late String selectedFilter;
